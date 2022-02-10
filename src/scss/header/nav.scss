@@ -1,0 +1,87 @@
+.logo-container {
+  display: flex;
+}
+.btn--buy--mobile {
+  display: none;
+  margin-left: auto;
+}
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+}
+.flex-container--no-spacing {
+  display: flex;
+  align-items: center;
+}
+.flex-container--centered-vertically {
+  align-items: center;
+}
+.flex-container--medium {
+  width: 60%;
+  min-width: 850px;
+}
+.logo-inner-container {
+  width: 700px;
+}
+.flex-container--horizontal {
+  display: flex;
+  justify-content: space-between;
+}
+.btn--small {
+  @include main-nav-font;
+  padding: 11px 3rem;
+  outline: none;
+  border-radius: 40px;
+}
+.btn--base-color {
+  background-color: $base-color;
+  color: white;
+}
+.navigation-container--top {
+  padding: 41px 90px 0 90px;
+  justify-content: space-between;
+}
+.navigation-menu {
+  align-items: center;
+  justify-content: space-between;
+}
+.heading {
+  @include top-site-heading;
+  text-transform: uppercase;
+  margin: 0 20px;
+}
+.flex-container--medium {
+  min-width: 52rem;
+}
+.heading--base-color {
+  color: $base-color;
+}
+.bars {
+  height: 3px;
+  width: 26px;
+  border-radius: 5px;
+  background-color: white;
+  margin-bottom: 6px;
+  display: none;
+}
+.bars:first-of-type {
+  width: 15px;
+  transform: translateX(11px);
+}
+.wrapper {
+  background-image: url("@img/img 1.png");
+  background-size: cover;
+  background-position: center;
+}
+.navigation__link {
+  @include main-nav-font;
+  color: $base-color;
+  text-decoration: none;
+}
+.adaptive-menu {
+  flex-direction: column;
+  background: #333333;
+}
+.heading--ultra-large {
+  margin-bottom: 3rem;
+}

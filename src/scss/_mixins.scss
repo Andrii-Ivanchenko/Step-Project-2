@@ -1,0 +1,153 @@
+@mixin main-titel {
+  display: flex;
+  justify-content: center;
+  padding-top: 5rem;
+  padding-bottom: 1.6rem;
+  font-size: 1.6rem;
+  line-height: 1.7rem;
+  color: $main-titel-h2;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+@mixin main-text {
+  font-family: "Lato", sans-serif;
+  display: flex;
+  justify-content: center;
+  font-size: 0.8rem;
+  line-height: 1.25rem;
+  font-weight: 400;
+  letter-spacing: 0.05rem;
+  color: $main-text-revolution;
+  text-align: center;
+}
+@mixin icons {
+  padding-top: 2.25rem;
+  padding-bottom: 7.5rem;
+  font-size: 0.7rem;
+  font-weight: 500;
+  line-height: 1.25rem;
+  text-align: center;
+}
+@mixin icon-text {
+  font-weight: 700;
+  padding: 0 0.5rem;
+}
+@mixin icon-link {
+  display: flex;
+  justify-content: center;
+  padding-top: 0.313rem;
+  padding-bottom: 0.313rem;
+  padding-left: 1rem;
+  border-radius: 0.3rem;
+  background-color: rgb(248, 248, 248);
+  border: 1px solid rgb(206, 206, 206);
+  border-right: none;
+  box-shadow: 0 1px 0 rgba(228, 228, 228, 0.404);
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+}
+@mixin icon-link-two {
+  padding-top: 0.313rem;
+  padding-bottom: 0.313rem;
+  border-radius: 0.3rem;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(206, 206, 206);
+  box-shadow: 0 1px 0 rgba(228, 228, 228, 0.404);
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+}
+@mixin title-h2 {
+  color: $main-titel-h2Two;
+  padding-bottom: 2.25rem;
+  font-size: 2rem;
+  font-weight: 2.4rem;
+  text-align: center;
+  font-weight: 700;
+}
+@mixin block-info {
+  color: $main-text-revolution;
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: center;
+}
+@mixin info-text {
+  font-family: "Lato", sans-serif;
+  color: $main-text;
+  padding-top: 0.9rem;
+  padding-bottom: 2.3rem;
+  font-size: 0.8rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+// footer
+@mixin footer {
+  padding-top: 22px;
+  color: $footer-h2;
+  background-image: url("../img/fork_sabs_pric.png");
+  background-size: cover;
+  text-align: center;
+}
+@mixin price-info {
+  background-color: rgba(255, 255, 255, 0.137);
+  text-align: center;
+  width: 257px;
+  border-radius: 0.1rem;
+}
+@mixin footer-h2 {
+  color: $footer-h2;
+  padding-top: 0.875rem;
+  padding-bottom: 2rem;
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+@mixin footer-title {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin: 0 auto;
+  width: 257px;
+  text-transform: uppercase;
+}
+@mixin title-color {
+  margin: 0 auto;
+  width: 100%;
+  padding-top: 2.68rem;
+  padding-bottom: 2.68rem;
+  background-color: #463048a1;
+}
+@mixin block-color {
+  // margin: 0 auto 1.25rem;
+  // width: 18.69rem;
+  height: 35rem;
+  background-color: #463048a1;
+}
+
+@mixin text-price {
+  padding-top: 4.25rem;
+  font-size: 3.72rem;
+  font-weight: 3.8rem;
+  font-weight: 700;
+}
+@mixin text-month {
+  padding-top: 1.25rem;
+  font-size: 0.87rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+@mixin text {
+  padding-top: 1.87rem;
+  font-weight: 400;
+}
+
+@mixin btn {
+  color: #ffffff;
+  font-size: 0.93rem;
+  font-weight: 400;
+  margin-top: 2.313rem;
+  margin-bottom: 2.25rem;
+  text-transform: uppercase;
+  padding: 0.938rem 2.375rem;
+  border-radius: 1.8rem;
+  background-color: rgba(255, 255, 255, 0.26);
+}

@@ -1,0 +1,10 @@
+.wrapper {
+  width: 100%;
+}
+.wrapper--centered--large-desktop {
+  width: 90%;
+  margin: 0 auto;
+}
+@import "./nav";
+@import "./header-information.scss";
+@import "./download-button.scss";

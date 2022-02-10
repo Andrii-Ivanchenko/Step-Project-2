@@ -1,0 +1,173 @@
+// footer
+.footer {
+  @include footer;
+  padding-bottom: 12px;
+  @media (min-width: 768px) {
+    padding-bottom: 5.875rem;
+  }
+}
+.footer__line {
+  margin: 0 auto;
+  width: 76%;
+  height: 2px;
+  margin-bottom: 12px;
+  background-color: rgba(255, 255, 255, 0.26);
+}
+.footer__h2 {
+  @include footer-h2;
+  @media (min-width: 481px) {
+    font-size: 1.95rem;
+    line-height: 2rem;
+  }
+  @media (min-width: 563px) {
+    font-size: 2.3rem;
+    line-height: 2.35rem;
+  }
+  @media (min-width: 763px) {
+    font-size: 2.625rem;
+    line-height: 2.75rem;
+    padding-top: 4.93rem;
+  }
+}
+.price-info__wrap-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  & > .price-info {
+    margin-bottom: 1.875rem;
+  }
+  @media (min-width: 481px) {
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 23px;
+  }
+  @media (min-width: 992px) {
+    display: none;
+  }
+}
+
+.price-info {
+  @include price-info;
+  height: 29.19rem;
+  &__title {
+    @include footer-title;
+    padding-top: 2.25rem;
+    padding-bottom: 2.25rem;
+    background-color: rgba(255, 255, 255, 0.137);
+  }
+  &__title-color {
+    @include footer-title;
+    @include title-color;
+  }
+  &__text {
+    padding: 0 23px;
+    line-height: 1.125rem;
+  }
+  &__text-price {
+    @include text-price;
+    &::before {
+      content: "$";
+      font-weight: 400;
+    }
+  }
+  &__last {
+    @media (min-width: 768px) {
+      margin-right: 2.625rem;
+    }
+    @media (min-width: 992px) {
+      margin-right: 0rem;
+    }
+  }
+  &__text-month {
+    @include text-month;
+    &::after {
+      content: "";
+      display: block;
+      width: 3.75rem;
+      border-bottom: 0.313rem solid $main-titel-h2Two;
+      margin: 0 auto;
+      padding-top: 2.375rem;
+    }
+    &__wrap-second {
+      @media (min-width: 481px) {
+        flex-wrap: wrap;
+        align-items: center;
+        flex-direction: row;
+        column-gap: 23px;
+        margin-bottom: 1.875rem;
+      }
+    }
+    &__wrap-second > .price-info {
+      align-items: center;
+      margin-bottom: 1.875rem;
+    }
+  }
+  &__text {
+    @include text;
+  }
+  &__btn {
+    @include btn;
+  }
+  &__block-color {
+    @include block-color;
+    margin-bottom: 1.875rem;
+  }
+}
+//show
+.footer {
+  @include footer;
+}
+.footer__h2 {
+  @include footer-h2;
+}
+.price-info {
+  @include price-info;
+  &__title {
+    @include footer-title;
+    padding-top: 2.25rem;
+    padding-bottom: 2.25rem;
+    background-color: rgba(255, 255, 255, 0.137);
+  }
+  &__title-color {
+    @include footer-title;
+    @include title-color;
+  }
+  &__text-price {
+    @include text-price;
+    &::before {
+      content: "$";
+      font-weight: 400;
+    }
+  }
+  &__text-month {
+    @include text-month;
+    &::after {
+      content: "";
+      display: block;
+      width: 3.75rem;
+      border-bottom: 0.313rem solid $main-titel-h2Two;
+      margin: 0 auto;
+      padding-top: 2.375rem;
+    }
+  }
+  &__text {
+    @include text;
+  }
+  &__btn {
+    @include btn;
+  }
+  &_block-color {
+    @include block-color;
+  }
+}
+.price-info__wrap-inner-show {
+  display: none;
+  @media (min-width: 992px) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}

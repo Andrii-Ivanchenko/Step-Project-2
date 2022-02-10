@@ -1,0 +1,52 @@
+.wrapper--people-are-talking {
+  padding-top: 10rem;
+  background-image: url("@img/testimonials-bg 1.png");
+  background-size: cover;
+}
+.subheading--white-color {
+  color: white;
+}
+.subheading--vertically-spaced-long {
+  padding-bottom: 5rem;
+}
+.flex-container {
+  &__text {
+    @include small-subheading-font;
+  }
+  &__text::after {
+    content: "";
+    display: block;
+    width: 65%;
+    height: 1px;
+    border: 1px solid #645766;
+    margin: 20px auto 0 auto;
+  }
+  &__text--wrapping-reviews-text {
+    color: $subheading-color;
+  }
+  &--wrapped {
+    display: flex;
+    max-height: 46rem;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  &__items {
+    display: flex;
+    max-width: 32%;
+    min-height: 17rem;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__item-description {
+    @include reviews-description-font;
+    font-size: 1.4rem;
+  }
+  &__img-container {
+    min-height: 6rem;
+    display: flex;
+    align-items: center;
+  }
+  &__item-description--color-white {
+    color: white;
+  }
+}
