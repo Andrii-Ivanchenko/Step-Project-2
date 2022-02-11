@@ -1,0 +1,123 @@
+a:visited {
+  color: $base-color;
+}
+.navigation-menu__item a:hover {
+  color: $base-color;
+}
+$animation-curve: cubic-bezier(1, 0, 0, 1);
+html {
+  min-width: 320px;
+}
+.logo-container {
+  align-items: center;
+}
+.flex-container--centered-vertically {
+  align-items: flex-start;
+}
+.adaptive-menu {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  background: #333333;
+  height: 80%;
+  min-width: unset;
+  align-items: flex-start;
+}
+.navigation-menu__item {
+  height: 10rem;
+  display: flex;
+  align-items: center;
+  padding-left: 4rem;
+  border-bottom: 3px solid #3b3b3b;
+  width: 100%;
+}
+.adaptive-menu__bars {
+  position: relative;
+}
+.menu-toggle {
+  display: initial;
+}
+.middle-line::before {
+  content: "";
+  width: 26px;
+  height: 3px;
+  background-color: white;
+  display: block;
+  color: red;
+  transition: all 0.6s $animation-curve;
+  border-radius: 5px;
+  position: absolute;
+  top: 250%;
+  right: 0;
+  box-sizing: content-box;
+}
+.middle-line {
+  width: 26px;
+  height: 3px;
+  background-color: white;
+  cursor: pointer;
+  position: relative;
+  display: block;
+  border-radius: 5px;
+  box-sizing: content-box;
+}
+input {
+  opacity: 0;
+}
+.middle-line::after {
+  content: "";
+  width: 16px;
+  height: 3px;
+  background-color: white;
+  display: block;
+  color: red;
+  transition: all 0.6s $animation-curve;
+  border-radius: 5px;
+  position: absolute;
+  top: -250%;
+  right: 0;
+  box-sizing: content-box;
+}
+
+.middle-line::before {
+  transform: rotateZ(0deg);
+  transform-origin: left top;
+  bottom: -300%;
+  left: 0%;
+}
+
+.middle-line::after {
+  transform: rotateZ(0deg);
+  transform-origin: left bottom;
+  top: -300%;
+  left: 30%;
+}
+
+#toggle:checked ~ .middle-line::before {
+  content: "";
+  background-color: white;
+  transform: rotateZ(-40deg);
+  left: 10%;
+}
+
+#toggle:checked ~ .middle-line::after {
+  content: "";
+  background-color: white;
+  transform: rotateZ(40deg);
+  left: 10%;
+  width: 26px;
+}
+
+#toggle:checked ~ .middle-line {
+  background-color: black;
+}
+
+#toggle ~ .middle-line {
+  transition: all 0.5s $animation-curve;
+}
+.navigation-menu__item {
+  .navigation__link {
+    color: white;
+    margin: 0;
+  }
+}

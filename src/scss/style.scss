@@ -19,10 +19,7 @@ body {
 }
 @import "./variables";
 @import "./header/header";
-@import "./main/first-screen/first-screen.scss";
-@import "./main/second-screen/second-screen";
 @import "./main/third-screen/third-screen.scss";
-@import "./main/fourth-screen/fourth-screen.scss";
 @media (max-width: 1349px) {
   navigation__link {
     font-size: 1.3rem;
@@ -132,13 +129,13 @@ body {
     margin: 0;
     width: 17rem;
   }
-  .bars-icon {
+  .bars {
     display: block;
   }
   .logo-picture-container {
     justify-content: space-between;
   }
-  .navigation-menu__item {
+  .navigation-menu {
     display: none;
   }
   .btn--buy--mobile {
@@ -159,5 +156,17 @@ body {
   }
   .flex-container--menu {
     flex-direction: column;
+  }
+}
+@media (max-width: 482px) {
+  @import "./header/mobile-nav.scss";
+}
+@media (max-width: 321px) {
+  html {
+    min-width: 320px;
+    width: 320px;
+  }
+  .btn--download {
+    min-width: 260px;
   }
 }

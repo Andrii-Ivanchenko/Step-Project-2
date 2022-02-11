@@ -6,12 +6,16 @@
 .subheading--white-color {
   color: white;
 }
+.subheading--large {
+  @include main-heading-font;
+}
 .subheading--vertically-spaced-long {
   padding-bottom: 5rem;
 }
 .flex-container {
   &__text {
     @include small-subheading-font;
+    font-size: 1.5rem;
   }
   &__text::after {
     content: "";

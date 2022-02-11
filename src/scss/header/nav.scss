@@ -1,6 +1,28 @@
 .logo-container {
   display: flex;
 }
+.navigation-menu__item a:hover {
+  color: white;
+}
+.navigation__link:hover,
+.heading--top:hover {
+  color: white;
+}
+.btn {
+  cursor: pointer;
+}
+.btn:active {
+  outline: none;
+  border-style: outset;
+}
+.btn:hover {
+  background-color: white;
+  color: $base-color;
+}
+.logo-picture-container__logo:hover {
+  filter: brightness(0) invert(1);
+}
+
 .btn--buy--mobile {
   display: none;
   margin-left: auto;
@@ -15,6 +37,9 @@
 }
 .flex-container--centered-vertically {
   align-items: center;
+}
+.menu-toggle {
+  display: none;
 }
 .flex-container--medium {
   width: 60%;
@@ -56,18 +81,6 @@
 .heading--base-color {
   color: $base-color;
 }
-.bars {
-  height: 3px;
-  width: 26px;
-  border-radius: 5px;
-  background-color: white;
-  margin-bottom: 6px;
-  display: none;
-}
-.bars:first-of-type {
-  width: 15px;
-  transform: translateX(11px);
-}
 .wrapper {
   background-image: url("@img/img 1.png");
   background-size: cover;
@@ -78,10 +91,13 @@
   color: $base-color;
   text-decoration: none;
 }
-.adaptive-menu {
-  flex-direction: column;
-  background: #333333;
-}
+
 .heading--ultra-large {
   margin-bottom: 3rem;
+}
+.menu-item-active {
+  border-left: $base-color solid 4px;
+}
+.menu-link-active {
+  color: $base-color;
 }
