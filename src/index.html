@@ -2,20 +2,16 @@
 <html lang="en">
   @@include('html/head.html',{"title":"Step-Project-2 Advanced HTML layout"})
   <body>
-    <header>
-    
-    </header>
+    <header class="wrapper">@@include('html/header/nav.html') @@include('html/header/header-information.html') @@include('html/header/download-button.html')</header>
 
     <main>
       <section>@@include('html/main/first-screen/main-heading.html')</section>
 
-     @@include('html/main/second-screen/second-screen.html')
+      @@include('html/main/second-screen/second-screen.html')
 
       <section>@@include('./html/main/third-screen/third-screen.html')</section>
 
-      <section>
-        @@include('./html/main/fourth-screen/fourth-screen.html')
-      </section>
+      <section>@@include('./html/main/fourth-screen/fourth-screen.html')</section>
     </main>
   </body>
 </html>
