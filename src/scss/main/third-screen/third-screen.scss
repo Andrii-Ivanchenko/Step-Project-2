@@ -1,6 +1,6 @@
 .wrapper--people-are-talking {
   padding-top: 10rem;
-  background-image: url("@img/testimonials-bg 1.png");
+  background-image: url("../img/testimonials-bg 1.png");
   background-size: cover;
 }
 .subheading--white-color {
@@ -23,7 +23,7 @@
     width: 65%;
     height: 1px;
     border: 1px solid #645766;
-    margin: 20px auto 0 auto;
+    margin: 13px auto 0 auto;
   }
   &__text--wrapping-reviews-text {
     color: $subheading-color;
