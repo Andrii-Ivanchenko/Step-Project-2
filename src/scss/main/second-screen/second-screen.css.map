@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "second-screen.scss",
+        "here-is-what-you-get.scss"
+    ],
+    "names": [],
+    "file": "second-screen.css"
+}

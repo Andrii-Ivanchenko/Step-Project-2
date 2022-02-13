@@ -1,0 +1,82 @@
+// main
+.main {
+  &__title {
+    @include main-titel;
+
+    @media (min-width: 481px) {
+      font-size: 1.625rem;
+      line-height: 1.75rem;
+    }
+    @media (min-width: 500px) {
+      font-size: 2rem;
+      line-height: 2rem;
+    }
+
+    @media (min-width: 781px) {
+      font-size: 2.625rem;
+      line-height: 2.625rem;
+    }
+
+    @media (min-width: 1200px) {
+      font-size: 3.375rem;
+      line-height: 3.375rem;
+    }
+  }
+
+  &__text {
+    @include main-text;
+    @media (min-width: 481px) {
+      font-size: 1.1rem;
+      line-height: 2rem;
+    }
+
+    @media (min-width: 781px) {
+      font-size: 1.31rem;
+      line-height: 2rem;
+    }
+    @media (min-width: 980px) {
+      margin: 0 7.13rem;
+      font-size: 1.31rem;
+      line-height: 2rem;
+    }
+  }
+}
+
+.icons {
+  @include icons;
+}
+
+.icon {
+  &__link-two:not(:last-child) {
+    margin-right: 0.8rem;
+  }
+
+  &__link {
+    @include icon-link;
+  }
+
+  &__text {
+    @include icon-text;
+    display: inline;
+  }
+  &__link-two {
+    @include icon-link-two;
+  }
+
+  @media (min-width: 320px) {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    max-width: none;
+  }
+
+  @media (max-width: 480px) {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    max-width: 320px;
+  }
+}

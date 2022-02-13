@@ -170,3 +170,11 @@ body {
     min-width: 260px;
   }
 }
+@import "./reset";
+@import "./_variable";
+@import "./_mixins";
+@import "./fonts";
+@import "./header/header";
+@import "./main/first-screen/main-heading";
+@import "./main/second-screen/second-screen";
+@import "./main/fourth-screen/fourth-screen";
